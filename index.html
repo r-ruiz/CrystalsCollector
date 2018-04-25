@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!--my styles-->
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <!--logic-->
     <script src="assets/javascript/game.js"></script>
 </head>
@@ -84,16 +85,31 @@
                     <div class="col">
                         <div class="row row-flex">
                             <div class="col-md-3">
-                                <img class="img-fluid" src="assets/images/jem1.png" id="jem1" alt="jewel 1" title="click jewel 1" />
+                                <img class="img-fluid jem" src="assets/images/jem1.png" id="jem1" alt="jewel 1" title="click jewel 1" />
                             </div>
                             <div class="col-md-3">
-                                <img class="img-fluid" src="assets/images/jem2.png" id="jem2" alt="jewel 2" title="click jewel 2" />
+                                <img class="img-fluid jem" src="assets/images/jem2.png" id="jem2" alt="jewel 2" title="click jewel 2" />
                             </div>
                             <div class="col-md-3">
-                                <img class="img-fluid" src="assets/images/jem3.png" id="jem3" alt="jewel 3" title="click jewel 3" />
+                                <img class="img-fluid jem" src="assets/images/jem3.png" id="jem3" alt="jewel 3" title="click jewel 3" />
                             </div>
                             <div class="col-md-3">
-                                <img class="img-fluid" src="assets/images/jem4.png" id="jem4" alt="jewel 4" title="click jewel 4" />
+                                <img class="img-fluid jem" src="assets/images/jem4.png" id="jem4" alt="jewel 4" title="click jewel 4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-flex pt-4">
+                    <div class="col">
+                        <div class="card text-center">
+                            <h3>
+                                Game Status
+                            </h3>
+                            <div id="status">
+                                <!--end game result-->
+                                <h3>
+                                    ---
+                                </h3>
                             </div>
                         </div>
                     </div>
