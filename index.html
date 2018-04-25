@@ -1,0 +1,133 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystals Collector - Ruben Ruiz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--reset all styles-->
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/reset.css" />
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--my styles-->
+    <link rel="stylesheet" type="text/css" media="screen" href="/assets/css/style.css" />
+    <!--logic-->
+    <script src="/assets/javascript/game.js"></script>
+</head>
+<body>
+    <div class="container pb-4 pt-4 mt-5 border">
+        <div class="jumbotron text-center">
+            <h1>
+                Crystals Collector Game
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-1">
+                <!--empty-->
+            </div>
+            <div class="col-md-4">
+                <h2>
+                    Instructions:
+                </h2>
+                <p>
+                    You will be given a random number at the start of the game.
+                </p>
+                <p>
+                    There are four crystals to the right.  By clicking on a crystal you will add a specific amount of point to your total socre.
+                </p>
+                <p>
+                    You win the game by matching your total score to random number, you lose the game if your total score goes above the random number
+                </p>
+                <p>
+                    The value of each crystal is hidden from you until you click on it.
+                </p>
+                <p>
+                    Each time when the game starts, the game will change the values of each crystal
+                </p>
+            </div>
+            <div class="col-md-1">
+                <!--empty-->
+            </div>
+            <div class="col-md-4 border">
+                <div class="row pt-4">
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                            <h3>
+                                Random Number
+                            </h3>
+                            <div id="compRandom">
+                                <!--computer random number-->
+                                <h3>
+                                    ---
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                            <h3>
+                                Your Number
+                            </h3>
+                            <div id="userNum">
+                                <!--user total sum-->
+                                <h3>
+                                    ---
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <img class="img-fluid" src="assets/images/jem1.png" id="jem1" alt="jewel 1" title="click jewel 1" />
+                            </div>
+                            <div class="col-md-3">
+                                <img class="img-fluid" src="assets/images/jem2.png" id="jem2" alt="jewel 2" title="click jewel 2" />
+                            </div>
+                            <div class="col-md-3">
+                                <img class="img-fluid" src="assets/images/jem3.png" id="jem3" alt="jewel 2" title="click jewel 2" />
+                            </div>
+                            <div class="col-md-3">
+                                <img class="img-fluid" src="assets/images/jem4.png" id="jem4" alt="jewel 2" title="click jewel 2" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                           <h3>
+                                Wins
+                           </h3>
+                           <div id="wins">
+                               <!--posted wins-->
+                               <h3>
+                                   ---
+                               </h3>
+                           </div>  
+                        </div> 
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card text-center">
+                            <h3>
+                                Losses
+                            </h3>
+                            <div id="losses">
+                                <!--posted losses-->
+                                <h3>
+                                    ---
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <!--empty-->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
