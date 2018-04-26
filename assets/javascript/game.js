@@ -6,6 +6,7 @@ var wins = 0;
 var losses = 0;
 var computerNum = Math.floor(Math.random() * (MAX - MIN + 1) + MIN);
 
+//Loading pre-game
 $(document).ready(function(){
     // set random value for each gem
     $(".jem").each(function(){
@@ -16,36 +17,38 @@ $(document).ready(function(){
     game();
 });
 
+//Game click functions
 function game(){ 
     $("img").on("click", function() {
-        //console.log(this).val();
         userNum = $(this).attr("value");
         userTotal = userTotal + parseInt(userNum);
-        //userTotal += parseInt(this.value);
-        console.log("Value of Gem: " + userNum);
-        console.log("total: " + userTotal);
-        console.log("Target is: " + computerNum);
+        //checking values
+        //console.log("Value of Gem: " + userNum);
+        //console.log("total: " + userTotal);
+        //console.log("Target is: " + computerNum);
         $("#userNumber").html("<h3>" + userTotal + "</h3>");
         logic();
     });
 }
 
+//Game logic function
 function logic(){
     if (userTotal > computerNum){
         losses++;
-        $("#status").html("<h4>You lost that last game</h4>");
+        $("#status").html("<h4>You lost the last game</h4>");
         $("#losses").html("<h3>" + losses + "</h3>");
         reset();
     }
 
     else if (userTotal === computerNum){
         wins++;
-        $("#status").html("<h4>You won that last game</h4>");
+        $("#status").html("<h4>You won the last game</h4>");
         $("#wins").html("<h3>" + wins + "</h3>");
         reset();
     }
 }
 
+//Game reset function
 function reset(){
     userTotal = 0;
     userNum = 0;
