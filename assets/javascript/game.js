@@ -35,6 +35,7 @@ function game(){
 function logic(){
     if (userTotal > computerNum){
         losses++;
+        document.getElementById("lost").play();
         $("#status").html("<h4>You lost the last game</h4>");
         $("#losses").html("<h3>" + losses + "</h3>");
         reset();
@@ -42,6 +43,7 @@ function logic(){
 
     else if (userTotal === computerNum){
         wins++;
+        document.getElementById("win").play();
         $("#status").html("<h4>You won the last game</h4>");
         $("#wins").html("<h3>" + wins + "</h3>");
         reset();
